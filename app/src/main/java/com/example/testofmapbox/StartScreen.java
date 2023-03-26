@@ -22,7 +22,7 @@ public class StartScreen extends AppCompatActivity {
         String[] university = getResources().getStringArray(R.array.university);
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(
-                this, android.R.layout.simple_list_item_1, university
+                this, android.R.layout.simple_expandable_list_item_1, university
         );
 
         listView.setAdapter(arrayAdapter);

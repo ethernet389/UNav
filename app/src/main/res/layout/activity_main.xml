@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#269AB5">
 
     <FrameLayout
         android:id="@+id/map_box_container"
@@ -20,7 +21,9 @@
 
     <Button
         android:id="@+id/start_button"
-        android:text="Поиск пути"
+        android:text="Поиск \nпути"
+        android:backgroundTint="#A8D4FF"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
