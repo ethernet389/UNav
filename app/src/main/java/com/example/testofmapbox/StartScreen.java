@@ -16,5 +16,6 @@ public class StartScreen extends AppCompatActivity {
         setContentView(R.layout.activity_start_screen);
 
         listView = (ListView) findViewById(R.id.university);
+        String[] university = getResources().getStringArray(R.array.university);
     }
 }
