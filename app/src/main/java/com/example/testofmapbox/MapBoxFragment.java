@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.mapbox.maps.MapView;
+import com.mapbox.maps.Style;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -26,7 +27,7 @@ public class MapBoxFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    private MapView mapBoxView;
+    private MapView mapView;
     private String numberOfAuditory;
 
     public MapBoxFragment() {
@@ -64,8 +65,33 @@ public class MapBoxFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_map_box, container, false);
-        mapBoxView = rootView.findViewById(R.id.mapBoxView);
+        mapView = rootView.findViewById(R.id.mapBoxView);
+        mapView.getMapboxMap().loadStyleUri(Style.DARK);
 
         return rootView;
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        if (mapView != null) mapView.onStart();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (mapView != null) mapView.onStop();
+    }
+
+    @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+        if (mapView != null) mapView.onLowMemory();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (mapView != null) mapView.onDestroy();
     }
 }
