@@ -66,7 +66,7 @@ public class MapBoxFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_map_box, container, false);
         mapView = rootView.findViewById(R.id.mapBoxView);
-        mapView.getMapboxMap().loadStyleUri(Style.DARK);
+        mapView.getMapboxMap().loadStyleUri(Style.MAPBOX_STREETS);
 
         return rootView;
     }
