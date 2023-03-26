@@ -3,4 +3,13 @@
     <string name="mapbox_access_token">pk.eyJ1IjoiZXRoZXJuZXQzODl0d2luayIsImEiOiJjbGZudDhvcmYwcGVwM3JucHY4YTRwMm1zIn0.eo64OyrkDncc5dUeJWlOsg</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="question_id">Заблудились?</string>
+    <string name="textView2">Где вы находитесь?</string>
+
+    <string-array name="university" >
+        <item> Политех </item>
+        <item> Иркутский Государственный университет </item>
+        <item> Иркусткий Национальный Исследовательский Технический Университет </item>
+        <item> Политех </item>
+    </string-array>
 </resources>
